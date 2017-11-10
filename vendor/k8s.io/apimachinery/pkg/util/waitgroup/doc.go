@@ -14,10 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package v1alpha1
-
-type InitializerConfigurationExpansion interface{}
-
-type MutatingWebhookConfigurationExpansion interface{}
-
-type ValidatingWebhookConfigurationExpansion interface{}
+// Package waitgroup implements SafeWaitGroup wrap of sync.WaitGroup.
+// Add with positive delta when waiting will fail, to prevent sync.WaitGroup race issue.
+package waitgroup
